@@ -1,0 +1,5 @@
+homepage: "https://www.flytxt.com"
+documentation: "https://drive.google.com/file/d/1mBlxITcjgMTG4p0TA6a-xRwsY0bBTHDx/view?usp=sharing"
+versions:
+  - sha: a4d529405e6da5cafec207dd611c4f1016e8eef7
+    changeNotes: Initial release.

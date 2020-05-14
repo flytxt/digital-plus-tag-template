@@ -1,6 +1,8 @@
 homepage: "https://www.flytxt.com"
 documentation: "https://drive.google.com/file/d/1mBlxITcjgMTG4p0TA6a-xRwsY0bBTHDx/view?usp=sharing"
 versions:
+  - sha: 2f289cafa03509395c5beb0f5338e4525d0358fb
+    changeNotes: Added validations and changed script url
   - sha: 8aabcaf3b5062bc258317611a7bb0d4e7f047f20
     changeNotes: Updated sandboxed code to reflect change in injected script
   - sha: a4d529405e6da5cafec207dd611c4f1016e8eef7

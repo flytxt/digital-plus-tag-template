@@ -37,21 +37,36 @@ ___TEMPLATE_PARAMETERS___
     "name": "accountKey",
     "simpleValueType": true,
     "alwaysInSummary": true,
-    "displayName": "Account Key"
+    "displayName": "Account Key",
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ]
   },
   {
     "type": "TEXT",
     "name": "customerKey",
     "displayName": "Customer Key",
     "simpleValueType": true,
-    "alwaysInSummary": true
+    "alwaysInSummary": true,
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ]
   },
   {
     "type": "TEXT",
     "name": "tagCategory",
     "displayName": "Tag Category",
     "simpleValueType": true,
-    "alwaysInSummary": true
+    "alwaysInSummary": true,
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ]
   },
   {
     "type": "GROUP",
@@ -68,7 +83,13 @@ ___TEMPLATE_PARAMETERS___
             "defaultValue": "",
             "displayName": "Field Name",
             "name": "fieldName",
-            "type": "TEXT"
+            "type": "TEXT",
+            "isUnique": true,
+            "valueValidators": [
+              {
+                "type": "NON_EMPTY"
+              }
+            ]
           },
           {
             "defaultValue": "",
@@ -88,13 +109,15 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 // Enter your template code here.
 const log = require('logToConsole');
-log(data);
+if(data.additionalFields) {
+translateAdditionalFields(data);
+}
+  log(data);
 const encodeUriComponent=require('encodeUriComponent');
 const queryPermission=require('queryPermission');
 const callInWindow=require('callInWindow');
 const injectScript= require('injectScript');
-
-const scriptUri='https://ui.demo.flytxt.com/tag/flytxt.js';
+const scriptUri='https://s3-eu-west-1.amazonaws.com/flytxttag/flytxt.js';
 
 function onSuccess() {
   callInWindow("sendDigitalPlusData",data,data.gtmOnSuccess,data.gtmOnFailure);
@@ -107,6 +130,20 @@ if (queryPermission('inject_script', scriptUri)) {
 else {
   log(' Script load failed due to permissions mismatch.');
   data.gtmOnFailure();
+}
+
+function translateAdditionalFields(data) {
+
+var translatedFields={};
+var fields=data.additionalFields;
+for (var index=0,len=fields.length;index<len;index++) {
+  var fieldName=fields[index].fieldName;
+  translatedFields[fieldName]=fields[index].fieldValue;
+  
+}
+data.additionalFields=translatedFields;
+  
+
 }
 
 
@@ -148,7 +185,7 @@ ___WEB_PERMISSIONS___
             "listItem": [
               {
                 "type": 1,
-                "string": "https://ui.demo.flytxt.com/tag/flytxt.js"
+                "string": "https://s3-eu-west-1.amazonaws.com/flytxttag/flytxt.js"
               }
             ]
           }

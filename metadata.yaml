@@ -1,6 +1,8 @@
 homepage: "https://www.flytxt.com"
 documentation: "https://drive.google.com/file/d/1mBlxITcjgMTG4p0TA6a-xRwsY0bBTHDx/view?usp=sharing"
 versions:
+  - sha: 635255c9e329099f31102922f17cf4487a895135
+    changeNotes: Updated icon
   - sha: 62caa9c51b4554627d77d3cdb2b94873ffaae8ec
     changeNotes: Updated icon, changed script url
   - sha: 2f289cafa03509395c5beb0f5338e4525d0358fb

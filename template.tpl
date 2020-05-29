@@ -20,9 +20,9 @@ ___INFO___
     "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdNJREFUeNrMmDtSwzAQhh0NvVPQOwV9KOlCThBzA7d05gY5Qjpa3yD2DVxSkp4Z4p4CXwCznlkqduXVw5LVaCZStN/+euyuV8MwJNKmHp5y6M7E0MvP2/lEzN9A90nMb2B+LrKZGDRYtIauJ4Yemb9wEJVYlMS81cRvB1BrLQTv0dHZACuJWgh8EDroDxC8b6HrBGpx23uaFVCjQi7Y3g4cfA8BSKmQ4i3XKViZGrICBBWu0F24bQbQsU+jAWqM5Rr1LuhYMEDqHGag3r2v7XUCRDUaYug4gkYH1D3aTGj7jgXYWzoyPyCqMmV8DG1VFEChOrXL4s6AmgzH6XL4VFAH0WHsjg7Ixder68K+ALnMZcfkieEANXnfFHwwBYuJ8XLpgFssnsIDYmKwFUwtYylIqdf7PIdqhtt7ZNKwPCggGsyY0Nb4UlF5Vu8vayaLKps3UVmqt57ImqnwltqoqBzUo4qidqKoKkICTtW8NRP6NrMCogHJJ43aR+hTntT7B4Rqdq6Ptg1gyaT1LXcmmdLUPyAunBmk9bVr6LsxVG8skvbSxHQsB8CpPbOOqK1MPgHHaEYKfj3fFTZvGVUi3L5+lHNs8fjE7EIqqJKFt8UD/gowAJS7l9DJKYuHAAAAAElFTkSuQmCC"
   },
   "categories": [
-    "Analytics"
+    "ANALYTICS"
   ],
-  "description": "Flytxt Insights template facilitates integration with Digital Plus cloud.",
+  "description": "Capture customer interactions and integrate with NEON-dX platform",
   "containerContexts": [
     "WEB"
   ]

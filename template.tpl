@@ -117,7 +117,7 @@ const encodeUriComponent=require('encodeUriComponent');
 const queryPermission=require('queryPermission');
 const callInWindow=require('callInWindow');
 const injectScript= require('injectScript');
-const scriptUri='https://ndp-tag.s3-eu-west-1.amazonaws.com/ndptag.js';
+const scriptUri='https://ndp-gtm.s3-eu-west-1.amazonaws.com/ndptag.js';
 
 function onSuccess() {
   callInWindow("sendDigitalPlusData",data,data.gtmOnSuccess,data.gtmOnFailure);
@@ -185,7 +185,7 @@ ___WEB_PERMISSIONS___
             "listItem": [
               {
                 "type": 1,
-                "string": "https://ndp-tag.s3-eu-west-1.amazonaws.com/ndptag.js"
+                "string": "https://ndp-gtm.s3-eu-west-1.amazonaws.com/ndptag.js"
               }
             ]
           }

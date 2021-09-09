@@ -1,8 +1,6 @@
 homepage: "https://www.flytxt.com"
 documentation: "https://tag-manager-documents.s3.eu-west-1.amazonaws.com/Digital+Plus+Tag+template+Documentation.pdf"
 versions:
-  - sha: 05cafcdedefe354dfd834ca509249de1910d2c5f
-    changeNotes: changed documentaion url
   - sha: 417186a3e54f378affaba2d87bd92029978dacc7
     changeNotes: changed external script, again
   - sha: ffa892db75806a3ff96e4b729f5b53ad2bd2bdf5

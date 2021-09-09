@@ -1,5 +1,5 @@
 homepage: "https://www.flytxt.com"
-documentation: "https://drive.google.com/file/d/1mBlxITcjgMTG4p0TA6a-xRwsY0bBTHDx/view?usp=sharing"
+documentation: "https://tag-manager-documents.s3.eu-west-1.amazonaws.com/Digital+Plus+Tag+template+Documentation.pdf"
 versions:
   - sha: 417186a3e54f378affaba2d87bd92029978dacc7
     changeNotes: changed external script, again
